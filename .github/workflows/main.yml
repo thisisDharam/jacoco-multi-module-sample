@@ -29,10 +29,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn clean install site
       
-    - name: Publish Coverage Report
-      uses: romeovs/lcov-reporter-action@v0.2.19
+    - name: Add coverage to PR
+      id: jacoco
+      uses: madrapps/jacoco-report@v1.2
       with:
-         lcov-file: ./coverage/lcov-report
-         github-token: ${{ secrets.GITHUB_TOKEN }}
+          paths: /home/runner/work/jacoco-multi-module-sample/jacoco-multi-module-sample/module3/target/site/jacoco-aggregate/jacoco.xml
+          token: ${{ secrets.GITHUB_TOKEN }}}
