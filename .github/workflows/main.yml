@@ -29,7 +29,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean install site
+      run: mvn clean install
       
     - name: Add coverage to PR
       id: jacoco
