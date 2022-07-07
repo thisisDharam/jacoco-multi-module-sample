@@ -35,8 +35,4 @@ jobs:
       run:  |
         pwd
       
-    - name: Publish Coverage Report
-      uses: romeovs/lcov-reporter-action@v0.2.19
-      with:
-         lcov-file: ./coverage/lcov.info
-         github-token: ${{ secrets.GITHUB_TOKEN }}
+
