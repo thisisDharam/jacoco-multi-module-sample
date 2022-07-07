@@ -34,5 +34,5 @@ jobs:
     - name: Publish Coverage Report
       uses: romeovs/lcov-reporter-action@v0.2.19
       with:
-         lcov-file: ./coverage/lcov-report/lcov.info
+         lcov-file: ./coverage/lcov-report
          github-token: ${{ secrets.GITHUB_TOKEN }}
