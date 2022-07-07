@@ -40,4 +40,4 @@ jobs:
       uses: madrapps/jacoco-report@v1.2
       with:
           paths: /home/runner/work/jacoco-multi-module-sample/jacoco-multi-module-sample/module3/target/site/jacoco-aggregate/jacoco.xml
-          token: ${{ secrets.personal use }}}
+          token: ${{ secrets.GITHUB_TOKEN }}}
