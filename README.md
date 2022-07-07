@@ -33,3 +33,6 @@ The below test coverage report shows coverage for `testAll` profile.
 The other important point to consider here is we have tried to increase the coverage of module1 method `concatenation` from module3 by running cucumber tests. Cucumber tests can easily be replaced by any other functional test frameworks like Karate API Testing Framework.
 
 ![Coverage Report All](merged-coverage-report-all.png)
+
+
+[![CI with maven](https://github.com/thisisDharam/jacoco-multi-module-sample/actions/workflows/main.yml/badge.svg)](https://github.com/thisisDharam/jacoco-multi-module-sample/actions/workflows/main.yml)
