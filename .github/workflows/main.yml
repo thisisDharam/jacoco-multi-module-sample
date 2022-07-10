@@ -44,7 +44,7 @@ jobs:
         generate-branches-badge: true
         
     - name: Pushes test file
-      uses: thisisDharam/copy_file_to_another_repo_action@main
+      uses: thisisDharam/jacoco-multi-module-sample@v2
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
