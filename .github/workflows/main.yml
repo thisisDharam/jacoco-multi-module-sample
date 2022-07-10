@@ -42,3 +42,15 @@ jobs:
       uses: cicirello/jacoco-badge-generator@v2
       with:
         generate-branches-badge: true
+        
+    - name: Pushes test file
+      uses: thisisDharam/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'module3/target/site/jacoco-aggregate/jacoco.csv'
+        destination_repo: 'jacoco-multi-module-sample/module3/'
+        destination_folder: 'target'
+        user_email: 'singhdharam.be@gmail.com'
+        user_name: 'thisisDharam'
+        commit_message: 'A custom message for the commit'
