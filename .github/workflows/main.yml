@@ -45,7 +45,7 @@ jobs:
          jacoco-csv-file: module3/target/site/jacoco-aggregate/jacoco.csv
           
     - name: Commit the badge (if it changed)
-      run:	|
+      run:  |
           if [[ `git status --porcelain` ]]; then
           git config --global user.name 'thisisDharam'
           git config --global user.email 'singhdharam.be@gmail.com'
