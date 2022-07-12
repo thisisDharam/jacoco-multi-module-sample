@@ -37,9 +37,9 @@ jobs:
         ls
         cd module3/target/site/jacoco-aggregate
         pwd
-        ls index.html
+        ls 
         #cp /home/runner/work/jacoco-multi-module-sample/jacoco-multi-module-sample/module3/target/site/jacoco-aggregate/index.html .github/Target/
-        if [[ `git status --porcelain` ]]; then
+        git add --all
         git config --global user.name 'thisisDharam'
         git config --global user.email 'singhdharam.be@gmail.com'
         git add -A
