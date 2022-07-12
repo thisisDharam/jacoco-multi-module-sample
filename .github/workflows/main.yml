@@ -36,6 +36,7 @@ jobs:
         pwd
         cd module3/target/site/jacoco-aggregate
         ls
+        cp module3/target/site/jacoco-aggregate/index.html .github/Target/
         
         
     - name: Generate JaCoCo Badge
