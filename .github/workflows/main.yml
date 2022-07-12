@@ -35,6 +35,8 @@ jobs:
       run:  |
         pwd
         ls
+        cd module3/target/site/jacoco-aggregate
+        ls index.html
         
         
         
