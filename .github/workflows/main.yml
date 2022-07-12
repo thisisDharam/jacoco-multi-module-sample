@@ -38,7 +38,14 @@ jobs:
         cd module3/target/site/jacoco-aggregate
         pwd
         ls index.html
-        cp /home/runner/work/jacoco-multi-module-sample/jacoco-multi-module-sample/module3/target/site/jacoco-aggregate/index.html .github/Target/
+        #cp /home/runner/work/jacoco-multi-module-sample/jacoco-multi-module-sample/module3/target/site/jacoco-aggregate/index.html .github/Target/
+        if [[ `git status --porcelain` ]]; then
+        git config --global user.name 'thisisDharam'
+        git config --global user.email 'singhdharam.be@gmail.com'
+        git add -A
+        git commit -m "Copied the target files"
+        git push
+        fi
         
         
     - name: Generate JaCoCo Badge
