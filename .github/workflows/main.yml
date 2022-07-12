@@ -29,7 +29,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-     # run: mvn clean install
+      run: mvn clean install
       
     - name: Experiment
       run:  |
@@ -38,7 +38,7 @@ jobs:
         ls
         
         
-   # - name: Generate JaCoCo Badge
+    - name: Generate JaCoCo Badge
       uses: cicirello/jacoco-badge-generator@v2
       with:
          generate-branches-badge: true
@@ -46,7 +46,7 @@ jobs:
           
     - name: Commit the badge (if it changed)
       run: |
-    #      if [[ `git status --porcelain` ]]; then
+          if [[ `git status --porcelain` ]]; then
           git config --global user.name 'neerajv'
           git config --global user.email 'neeraj.virmani@gmail.com'
           git add -A
