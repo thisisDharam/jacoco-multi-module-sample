@@ -43,7 +43,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
-          name: Build_Artifacts
+          name: Build-Artifacts
           path: module3/target/site/jacoco-aggregate/*
              
         
