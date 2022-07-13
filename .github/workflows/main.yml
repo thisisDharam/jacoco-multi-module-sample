@@ -51,7 +51,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: Build_Artifacts
-          path: .github/Target/
+          path: module3/target/site/jacoco-aggregate/*
         
     - name: Download all workflow run artifacts
       uses: actions/download-artifact@v3
