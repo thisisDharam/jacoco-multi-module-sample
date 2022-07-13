@@ -47,6 +47,9 @@ jobs:
         git push
         fi
         
+    - name: Download all workflow run artifacts
+      uses: actions/download-artifact@v3
+        
         
     - name: Generate JaCoCo Badge
       uses: cicirello/jacoco-badge-generator@v2
