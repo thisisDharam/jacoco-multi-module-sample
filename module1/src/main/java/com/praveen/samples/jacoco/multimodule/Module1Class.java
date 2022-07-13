@@ -1,3 +1,6 @@
+/**
+just checking
+*/
 package com.praveen.samples.jacoco.multimodule;
 
 public class Module1Class {
