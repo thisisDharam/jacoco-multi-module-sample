@@ -44,14 +44,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: Build-Artifacts
-          path: module3/target/site/jacoco-aggregate/*
-          
-    - name: Upload artifacts2
-      uses: actions/upload-artifact@v3
-      with:
-          name: Build-Artifacts
-          path: /home/runner/work/jacoco-multi-module-sample/jacoco-multi-module-sample/*
-          
+          path: module3/target/site/jacoco-aggregate/*      
           
     - name: Download all workflow run artifacts
       uses: actions/download-artifact@v3
