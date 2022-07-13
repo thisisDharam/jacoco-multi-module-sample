@@ -1,3 +1,6 @@
+/**
+this si the cm
+*/
 package com.praveen.samples.jacoco.multimodule;
 
 public class Module2Class {
