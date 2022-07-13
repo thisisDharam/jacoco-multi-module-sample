@@ -45,23 +45,7 @@ jobs:
       with:
           name: Build_Artifacts
           path: module3/target/site/jacoco-aggregate/*
-        
-    - name: Generate JaCoCo html Badge
-      uses: cicirello/jacoco-badge-generator@v2
-      with:
-         generate-branches-badge: true
-         jacoco-csv-file: module3/target/site/jacoco-aggregate/index.html
-          
-    - name: Commit the badge (if it changed)
-      run: |
-          if [[ `git status --porcelain` ]]; then
-          git config --global user.name 'thisisDharam'
-          git config --global user.email 'singhdharam.be@gmail.com'
-          git add -A
-          git commit -m "Html Auto generated JaCoCo coverage badge"
-          git push
-          fi    
-        
+             
         
     - name: Generate JaCoCo Badge
       uses: cicirello/jacoco-badge-generator@v2
