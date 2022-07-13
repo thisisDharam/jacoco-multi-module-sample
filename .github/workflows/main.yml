@@ -47,6 +47,12 @@ jobs:
         git push
         fi
         
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+          name: Build_Artifacts
+          path: .github/Target/
+        
     - name: Download all workflow run artifacts
       uses: actions/download-artifact@v3
         
