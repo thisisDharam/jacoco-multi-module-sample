@@ -45,6 +45,9 @@ jobs:
       with:
           name: Build-Artifacts
           path: module3/target/site/jacoco-aggregate/*
+          
+    - name: Download all workflow run artifacts
+      uses: actions/download-artifact@v3
              
         
     - name: Generate JaCoCo Badge
