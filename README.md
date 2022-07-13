@@ -9,3 +9,5 @@
 
 
 ![Coverage](.github/badges/jacoco.svg)
+  
+  ![Coverage](jacoco-multi-module-sample/Build_Artifacts/index.html)
