@@ -38,19 +38,12 @@ jobs:
         cd module3/target/site/jacoco-aggregate
         pwd
         ls 
-        #cp /home/runner/work/jacoco-multi-module-sample/jacoco-multi-module-sample/module3/target/site/jacoco-aggregate/index.html .github/Target/
-        if [[ `git status --porcelain` ]]; then
-        git config --global user.name 'thisisDharam'
-        git config --global user.email 'singhdharam.be@gmail.com'
-        git add -A
-        git commit -m "Copied the target files"
-        git push
-        fi
+
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
-          name: Build_Artifacts
+          name: .github/Build_Artifacts
           path: module3/target/site/jacoco-aggregate/*
         
     - name: Download all workflow run artifacts
