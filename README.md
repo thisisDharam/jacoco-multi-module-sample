@@ -2,4 +2,4 @@
 
 ![Coverage](.github/badges/jacoco.svg)
   
-![Coverage](.jacoco-multi-module-sample/Build_Artifacts/index.html)
+![Coverage](https://htmlpreview.github.io/?https://github.com/thisisDharam/jacoco-multi-module-sample/blob/master/Build-Artifacts/index.html)
